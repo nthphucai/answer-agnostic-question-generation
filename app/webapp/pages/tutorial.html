@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Hướng dẫn sử dụng Quest Generation</title>
+    <link rel="icon" href="/questgen/images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+    <link href="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/css/demo.css" rel="stylesheet">
+    <link href="questgen/css/beauty.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+          integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css"
+          integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css"
+          integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css"
+          integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/questgen/css/markdown.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
+            integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"
+            integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js"
+            integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div style="background-image: url('/questgen/images/anhbia.jpg')">
+    <!--        <canvas id="demo-canvas"></canvas>-->
+    <div style="margin-left: 50px; margin-right: 50px;">
+        <!-- <table style="width: 100%; height: 80px; background-image: url('/questgen/images/anhbia.jpg')"> -->
+        <table style="width: 100%; height: 100px">
+            <tbody>
+            <!-- <td>
+                <h1 style="color: azure"><strong>Question Generation</strong></h1>
+            </td> -->
+            <td>
+                <img src="questgen/images/logo2.png" class="logo">
+            </td>
+            <td>
+                <div style="text-align: right " class="title-menu">
+                    <a href="https://ftech.ai/" style="padding-right: 20px">TRANG CHỦ</a>
+                    <a href="/" style="padding-right: 20px;">DEMO</a>
+                    <a style="padding-right: 20px; font-weight: 900; color: azure;">HƯỚNG DẪN</a>
+                    <a href="https://ftech.ai/contact">LIÊN HỆ</a>
+                    <!-- <img src="questgen/images/logo2.png" class="logo"> -->
+                </div>
+            </td>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true"><h1
+        id="QuizExpert-AI---FTECH-AI-Open-Platform" data-id="QuizExpert-AI---FTECH-AI-Open-Platform"><a
+        class="anchor hidden-xs" href="#QuizExpert-AI---FTECH-AI-Open-Platform"
+        title="QuizExpert-AI---FTECH-AI-Open-Platform"><span class="octicon octicon-link"></span></a><span>QuizExpert AI - FTECH AI Open Platform</span>
+</h1>
+    <h1 id="TỔNG-QUAN" data-id="TỔNG-QUAN"><a class="anchor hidden-xs" href="#TỔNG-QUAN" title="TỔNG-QUAN"><span
+            class="octicon octicon-link"></span></a><span>TỔNG QUAN</span></h1>
+    <p><strong><span>QuizExpert AI</span></strong><span> là giải pháp tạo câu hỏi - câu trả lời tự động dựa vào thông tin (đoạn văn bản, từ khóa, chủ đề…) cho trước.</span>
+    </p>
+    <p><strong><span>QuizExpert AI</span></strong><span> hiện đang hỗ trợ 3 tác vụ:</span></p>
+    <ul>
+        <li><span>Sinh tạo câu hỏi </span><strong><span>đơn giản</span></strong><span> (hỏi - đáp): Ở dạng này, câu hỏi sẽ được sinh tạo kèm với một câu trả lời.</span>
+        </li>
+        <li><span>Sinh tạo câu hỏi </span><strong><span>trắc nghiệm</span></strong><span>.</span></li>
+        <li><span>Sinh tạo câu hỏi </span><strong><span>điền vào chỗ trống</span></strong><span> (đối với miền dữ liệu môn học Tiếng Anh): Ở dạng này, câu hỏi sẽ là một câu được che đi một hoặc một vài từ, câu trả lời là câu trả lời trắc nghiệm.</span>
+        </li>
+    </ul>
+    <p>
+        <span>Bên cạnh đó, </span><strong><span>QuizExpert AI</span></strong><span> đang hỗ trợ 3 miền dữ liệu sinh tạo:</span>
+    </p>
+    <ul>
+        <li><span>Miền dữ liệu chung </span><strong><span>(FAQs)</span></strong><span>.</span></li>
+        <li><span>Miền dữ liệu môn học </span><strong><span>Tiếng Anh</span></strong><span>.</span></li>
+        <li><span>Miền dữ liệu môn học </span><strong><span>Lịch sử</span></strong><span>.</span></li>
+        <li><span>(Đặc biệt) Miền dữ liệu môn học </span><strong><span>Lịch sử - SGK</span></strong><span>: Ở miền này, người dùng sẽ chọn đầu mục (gồm lớp =&gt; chương =&gt; bài =&gt; đầu mục) trong sách giáo khoa Lịch sử các lớp thuộc cấp Trung học Phổ thông để mô hình sinh tạo.</span>
+        </li>
+    </ul>
+    <hr>
+    <h1 id="HƯỚNG-DẪN-SỬ-DỤNG" data-id="HƯỚNG-DẪN-SỬ-DỤNG"><a class="anchor hidden-xs" href="#HƯỚNG-DẪN-SỬ-DỤNG"
+                                                              title="HƯỚNG-DẪN-SỬ-DỤNG"><span
+            class="octicon octicon-link"></span></a><span>HƯỚNG DẪN SỬ DỤNG</span></h1>
+    <h2 id="TẠO-CÂU-HỎI" data-id="TẠO-CÂU-HỎI"><a class="anchor hidden-xs" href="#TẠO-CÂU-HỎI" title="TẠO-CÂU-HỎI"><span
+            class="octicon octicon-link"></span></a><span>TẠO CÂU HỎI</span></h2>
+    <h3 id="Bước-1-Chọn-miền-dữ-liệu-và-dạng-câu-hỏi" data-id="Bước-1-Chọn-miền-dữ-liệu-và-dạng-câu-hỏi"><a
+            class="anchor hidden-xs" href="#Bước-1-Chọn-miền-dữ-liệu-và-dạng-câu-hỏi"
+            title="Bước-1-Chọn-miền-dữ-liệu-và-dạng-câu-hỏi"><span class="octicon octicon-link"></span></a><span>Bước 1: Chọn miền dữ liệu và dạng câu hỏi</span>
+    </h3>
+    <p><span>Ở webapp, giải pháp </span><strong><span>QuizExpert AI</span></strong><span> đang hỗ trợ 3 miền dữ liệu, mỗi miền sẽ có các dạng câu hỏi sinh tạo được hỗ trợ khác nhau:</span>
+    </p>
+    <ul>
+        <li><span>Miền dữ liệu </span><strong><span>FAQs</span></strong><span> được hỗ trợ dạng </span><strong><span>hỏi - đáp</span></strong><span>.</span>
+        </li>
+        <li>
+            <span>Miền dữ liệu </span><strong><span>Tiếng Anh</span></strong><span> được hỗ trợ 3 dạng </span><strong><span>hỏi đáp</span></strong><span>, </span><strong><span>trắc nghiệm</span></strong><span> và </span><strong><span>điền vào chỗ trống</span></strong><span>.</span>
+        </li>
+        <li>
+            <span>Miền dữ liệu </span><strong><span>Lịch sử</span></strong><span> và </span><strong><span>Lịch sử - SGK</span></strong><span> được hỗ trợ 2 dạng là </span><strong><span>hỏi - đáp</span></strong><span> và </span><strong><span>trắc nghiệm</span></strong><span>.</span>
+        </li>
+    </ul>
+    <p><img src="https://i.imgur.com/v1GYFpa.png" alt="" loading="lazy"></p>
+    <center><b>Hình 1.</b> Chọn miền dữ liệu ở webapp.</center>
+    <br>
+    <p><img src="https://i.imgur.com/nwYxUme.png" alt="" loading="lazy"></p>
+    <center><b>Hình 2.</b> Chọn dạng câu hỏi sinh tạo ở webapp.</center>
+    <br>
+    <h3 id="Bước-2-Nhập-vào-nội-dung-văn-bản-hoặc-lựa-chọn-tệp-văn-bản-muốn-tạo-câu-hỏi"
+        data-id="Bước-2-Nhập-vào-nội-dung-văn-bản-hoặc-lựa-chọn-tệp-văn-bản-muốn-tạo-câu-hỏi"><a
+            class="anchor hidden-xs" href="#Bước-2-Nhập-vào-nội-dung-văn-bản-hoặc-lựa-chọn-tệp-văn-bản-muốn-tạo-câu-hỏi"
+            title="Bước-2-Nhập-vào-nội-dung-văn-bản-hoặc-lựa-chọn-tệp-văn-bản-muốn-tạo-câu-hỏi"><span
+            class="octicon octicon-link"></span></a><span>Bước 2: Nhập vào nội dung văn bản hoặc lựa chọn tệp văn bản muốn tạo câu hỏi.</span>
+    </h3><h5 id="21-Đối-với-phần-sinh-tạo-câu-hỏi-thuộc-miền-kiến-thức-chung-Tiếng-Anh-và-Lịch-sử"
+             data-id="21-Đối-với-phần-sinh-tạo-câu-hỏi-thuộc-miền-kiến-thức-chung-Tiếng-Anh-và-Lịch-sử"><a
+            class="anchor hidden-xs"
+            href="#21-Đối-với-phần-sinh-tạo-câu-hỏi-thuộc-miền-kiến-thức-chung-Tiếng-Anh-và-Lịch-sử"
+            title="21-Đối-với-phần-sinh-tạo-câu-hỏi-thuộc-miền-kiến-thức-chung-Tiếng-Anh-và-Lịch-sử"><span
+            class="octicon octicon-link"></span></a><span>2.1: Đối với phần sinh tạo câu hỏi thuộc miền kiến thức chung, Tiếng Anh và Lịch sử.</span>
+    </h5>
+    <p>
+        <span>Webapp hỗ trợ người dùng trong việc có thể nhập thủ công một đoạn văn hoặc tải một tệp văn bản (dạng </span><code>.txt</code><span>) vào nội dung sinh tạo.</span><br>
+        <strong><span>Lưu ý:</span></strong><span> Mô hình hiện đang sinh tạo tốt nhất đối với các đoạn văn có độ dài từ </span><code>600</code><span> đến </span><code>1000</code><span>.</span><br>
+        <span>Ngoài ra, webapp còn chuẩn bị một số mẫu ví dụ đối với mỗi miền dữ liệu khác nhau để người dùng có thể dùng thử nhanh.</span>
+    </p>
+    <p><img src="https://i.imgur.com/Gq9qF1q.png" alt="" loading="lazy"></p>
+    <center><b>Hình 3. </b>Trên giao diện trang webdemo, nhập văn bản (hoặc chọn tệp văn bản có sẵn từ máy tính hoặc
+        chọn ví dụ đã được chuẩn bị).
+    </center>
+    <h5 id="22-Đối-với-phần-sinh-tạo-câu-hỏi-thuộc-dạng-câu-hỏi-“Điền-vào-chỗ-trống”-của-miền-dữ-liệu-Tiếng-Anh"
+        data-id="22-Đối-với-phần-sinh-tạo-câu-hỏi-thuộc-dạng-câu-hỏi-“Điền-vào-chỗ-trống”-của-miền-dữ-liệu-Tiếng-Anh"><a
+            class="anchor hidden-xs"
+            href="#22-Đối-với-phần-sinh-tạo-câu-hỏi-thuộc-dạng-câu-hỏi-“Điền-vào-chỗ-trống”-của-miền-dữ-liệu-Tiếng-Anh"
+            title="22-Đối-với-phần-sinh-tạo-câu-hỏi-thuộc-dạng-câu-hỏi-“Điền-vào-chỗ-trống”-của-miền-dữ-liệu-Tiếng-Anh"><span
+            class="octicon octicon-link"></span></a><span>2.2: Đối với phần sinh tạo câu hỏi thuộc dạng câu hỏi “Điền vào chỗ trống” của miền dữ liệu Tiếng Anh.</span>
+    </h5>
+    <p>
+        <span>Ở dạng câu hỏi </span><strong><span>Điền vào chỗ trống</span></strong><span> của miền dữ liệu </span><strong><span>Tiếng Anh</span></strong><span>:</span>
+    </p>
+    <ul>
+        <li><span>Văn bản đầu vào là tùy chọn (người dùng có thể cung cấp hoặc không). Nếu có, mô hình sẽ sinh tạo dựa vào văn bản. Ngược lại, nếu không có văn bản, chúng tôi sẽ cho mô hình sinh tạo dựa vào cơ sở dữ liệu đã được xây dựng sẵn.</span>
+        </li>
+        <li><span>Số chỗ trống: Người dùng cần cung cấp số ô trống muốn được tạo. Mô hình sẽ tận dụng thông tin để sinh tạo tối đa số lượng chỗ trống mà người dùng cho vào.</span>
+        </li>
+    </ul>
+    <p><img src="https://i.imgur.com/HxmDYbC.png" alt="" loading="lazy"></p>
+    <center><b>Hình 4. </b>Chọn <b>Số chỗ trống</b> để mô hình sinh tạo các câu hỏi trắc nghiệm.</center>
+    <h4 id="23-Đối-với-phần-sinh-tạo-câu-hỏi-thuộc-miền-dữ-liệu-Lịch-sử---SGK"
+        data-id="23-Đối-với-phần-sinh-tạo-câu-hỏi-thuộc-miền-dữ-liệu-Lịch-sử---SGK"><a class="anchor hidden-xs"
+                                                                                       href="#23-Đối-với-phần-sinh-tạo-câu-hỏi-thuộc-miền-dữ-liệu-Lịch-sử---SGK"
+                                                                                       title="23-Đối-với-phần-sinh-tạo-câu-hỏi-thuộc-miền-dữ-liệu-Lịch-sử---SGK"><span
+            class="octicon octicon-link"></span></a><span>2.3: Đối với phần sinh tạo câu hỏi thuộc miền dữ liệu Lịch sử - SGK.</span>
+    </h4>
+    <p><span>Ở miền dữ liệu </span><strong><span>Lịch sử - SGK</span></strong><span>:</span></p>
+    <ul>
+        <li><span>Người dùng sẽ không cung cấp văn bản đầu vào, thay vào đó, họ cần chọn đầu mục (lớp =&gt; chương =&gt; bài =&gt; đầu mục) thuộc chương trình sách giáo khoa môn Lịch sử các lớp cấp Trung học Phổ thông để sinh tạo.</span>
+        </li>
+        <li>
+            <span>Các dạng câu hỏi được hỗ trợ bao gồm </span><strong><span>hỏi - đáp</span></strong><span> và </span><strong><span>trắc nghiệm</span></strong><span>.</span>
+        </li>
+    </ul>
+    <p><img src="https://i.imgur.com/F66FQ1Y.png" alt="" loading="lazy"></p>
+    <center><b>Hình 5. </b>Cách chọn nội dung sinh tạo thuộc miền dữ liệu <b>Lịch sử - SGK</b>.</center>
+    <h3 id="Bước-3-Gửi-yêu-cầu-sinh-tạo" data-id="Bước-3-Gửi-yêu-cầu-sinh-tạo"><a class="anchor hidden-xs"
+                                                                                  href="#Bước-3-Gửi-yêu-cầu-sinh-tạo"
+                                                                                  title="Bước-3-Gửi-yêu-cầu-sinh-tạo"><span
+            class="octicon octicon-link"></span></a><span>Bước 3: Gửi yêu cầu sinh tạo</span></h3>
+    <p>
+        <span>Sau khi chọn miền dữ liệu, dạng câu hỏi và nội dung để sinh tạo, người dùng nhấp chọn nút </span><em><strong><span>TẠO CÂU HỎI</span></strong></em><span> để gửi yêu cầu sinh tạo.</span>
+    </p>
+    <p><img src="https://i.imgur.com/j5gqTvE.png" alt="" loading="lazy"></p>
+    <center><b>Hình 6. </b>Nhấp chọn nút <b><i>TẠO CÂU HỎI</i></b> để gửi yêu cầu sinh tạo.</center>
+    <br>
+    <p><img src="https://i.imgur.com/5X5h4HI.png" alt="" loading="lazy"></p>
+    <center><b>Hình 7. </b>Kết quả sinh tạo.</center>
+    <p><img src="https://i.imgur.com/tvkXX2X.png" alt="" loading="lazy"></p>
+    <center><b>Hình 8. </b>Kết quả sinh tạo khi sử dụng miền dữ liệu <b>Tiếng Anh</b> và dạng câu hỏi <b>Điền vào chỗ
+        trống</b></center>
+    <h3 id="Bước-4-Gửi-phản-hồi-cho-nhóm-phát-triển-tùy-chọn-🤗"
+        data-id="Bước-4-Gửi-phản-hồi-cho-nhóm-phát-triển-tùy-chọn-🤗"><a class="anchor hidden-xs"
+                                                                        href="#Bước-4-Gửi-phản-hồi-cho-nhóm-phát-triển-tùy-chọn-🤗"
+                                                                        title="Bước-4-Gửi-phản-hồi-cho-nhóm-phát-triển-tùy-chọn-🤗"><span
+            class="octicon octicon-link"></span></a><span>Bước 4: Gửi phản hồi cho nhóm phát triển (tùy chọn) 🤗</span>
+    </h3>
+    <p><span>Với các kết quả sinh tạo nhận được, người dùng có thể gửi lại phản hồi để đóng góp ý kiến của mình về các kết quả sinh tạo cho nhóm phát triển như sau:</span>
+    </p>
+    <ul>
+        <li><span>Với phần </span><strong><span>CHẤP NHẬN</span></strong><span>: Người dùng có thể cung cấp ý kiến rằng với các thông tin câu hỏi - câu trả lời được sinh tạo từ đoạn văn có được người dùng chấp nhận hay không.</span>
+        </li>
+        <li><span>Với phần </span><strong><span>Ý KIẾN</span></strong><span>: Người dùng có thể tùy ý cung cấp ý kiến của mình về kết quả sinh tạo. Ví dụ như: “Câu hỏi sinh tạo ra hay quá”, “Câu trả lời vẫn chưa đủ ý, cần thêm…”, …</span><br>
+            <span>Sau khi cung cấp thông tin </span><strong><span>CHẤP NHẬN</span></strong><span> và </span><strong><span>Ý KIẾN</span></strong><span>, người dùng chỉ cần nhấp chọn nút </span><em><strong><span>Cập nhật dữ liệu</span></strong></em><span> để gửi thông tin phản hồi về nhóm phát triển.</span>
+        </li>
+    </ul>
+    <p><img src="https://i.imgur.com/j3nus38.png" alt="" loading="lazy"></p>
+    <center><b>Hình 9. </b>Một số ví dụ về ý kiến của người dùng.</center>
+    <p><img src="https://i.imgur.com/1xrCLRu.png" alt="" loading="lazy"></p>
+    <center><b>Hình 10. </b>Nhấp chọn nút <b><i>Cập nhật dữ liệu</i></b> để gửi phản hồi cho nhóm phát triển.</center>
+</div>
+<div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+    <div class="pull-right dropdown">
+        <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button"
+           aria-haspopup="true" aria-expanded="false" title="Table of content">
+            <i class="fa fa-bars"></i>
+        </a>
+        <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+            <div class="toc">
+                <ul class="nav">
+                    <li><a href="#QuizExpert-AI---FTECH-AI-Open-Platform"
+                           title="QuizExpert AI - FTECH AI Open Platform">QuizExpert AI - FTECH AI Open Platform</a>
+                    </li>
+                    <li><a href="#TỔNG-QUAN" title="TỔNG QUAN">TỔNG QUAN</a></li>
+                    <li><a href="#HƯỚNG-DẪN-SỬ-DỤNG" title="HƯỚNG DẪN SỬ DỤNG">HƯỚNG DẪN SỬ DỤNG</a>
+                        <ul class="nav">
+                            <li><a href="#TẠO-CÂU-HỎI" title="TẠO CÂU HỎI">TẠO CÂU HỎI</a>
+                                <ul class="nav">
+                                    <li><a href="#Bước-1-Chọn-miền-dữ-liệu-và-dạng-câu-hỏi"
+                                           title="Bước 1: Chọn miền dữ liệu và dạng câu hỏi">Bước 1: Chọn miền dữ liệu và dạng câu hỏi</a></li>
+                                    <li>
+                                        <a href="#Bước-2-Nhập-vào-nội-dung-văn-bản-hoặc-lựa-chọn-tệp-văn-bản-muốn-tạo-câu-hỏi"
+                                           title="Bước 2: Nhập vào nội dung văn bản hoặc lựa chọn tệp văn bản muốn tạo câu hỏi.">Bước 2: Nhập vào nội dung văn bản hoặc lựa chọn tệp văn bản muốn tạo câu hỏi.</a>
+                                    </li>
+                                    <li><a href="#Bước-3-Gửi-yêu-cầu-sinh-tạo" title="Bước 3: Gửi yêu cầu sinh tạo">Bước 3: Gửi yêu cầu sinh tạo</a></li>
+                                    <li><a href="#Bước-4-Gửi-phản-hồi-cho-nhóm-phát-triển-tùy-chọn-🤗"
+                                           title="Bước 4: Gửi phản hồi cho nhóm phát triển (tùy chọn) 🤗">Bước 4: Gửi phản hồi cho nhóm phát triển (tùy chọn) 🤗</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+        </ul>
+    </div>
+</div>
+<div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix"
+     style="top:100px;display:none;" null null>
+    <div class="toc">
+        <ul class="nav">
+            <li><a href="#QuizExpert-AI---FTECH-AI-Open-Platform" title="QuizExpert AI - FTECH AI Open Platform">QuizExpert AI - FTECH AI Open Platform</a></li>
+            <li><a href="#TỔNG-QUAN" title="TỔNG QUAN">TỔNG QUAN</a></li>
+            <li><a href="#HƯỚNG-DẪN-SỬ-DỤNG" title="HƯỚNG DẪN SỬ DỤNG">HƯỚNG DẪN SỬ DỤNG</a>
+                <ul class="nav">
+                    <li><a href="#TẠO-CÂU-HỎI" title="TẠO CÂU HỎI">TẠO CÂU HỎI</a>
+                        <ul class="nav">
+                            <li><a href="#Bước-1-Chọn-miền-dữ-liệu-và-dạng-câu-hỏi"
+                                   title="Bước 1: Chọn miền dữ liệu và dạng câu hỏi">Bước 1: Chọn miền dữ liệu và dạng câu hỏi</a></li>
+                            <li><a href="#Bước-2-Nhập-vào-nội-dung-văn-bản-hoặc-lựa-chọn-tệp-văn-bản-muốn-tạo-câu-hỏi"
+                                   title="Bước 2: Nhập vào nội dung văn bản hoặc lựa chọn tệp văn bản muốn tạo câu hỏi.">Bước 2: Nhập vào nội dung văn bản hoặc lựa chọn tệp văn bản muốn tạo câu hỏi.</a></li>
+                            <li><a href="#Bước-3-Gửi-yêu-cầu-sinh-tạo" title="Bước 3: Gửi yêu cầu sinh tạo">Bước 3: Gửi yêu cầu sinh tạo</a></li>
+                            <li><a href="#Bước-4-Gửi-phản-hồi-cho-nhóm-phát-triển-tùy-chọn-🤗"
+                                   title="Bước 4: Gửi phản hồi cho nhóm phát triển (tùy chọn) 🤗">Bước 4: Gửi phản hồi cho nhóm phát triển (tùy chọn) 🤗</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js"
+        integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+<script>
+    var markdown = $(".markdown-body");
+
+    //smooth all hash trigger scrolling
+    function smoothHashScroll() {
+        var hashElements = $("a[href^='#']").toArray();
+        for (var i = 0; i < hashElements.length; i++) {
+            var element = hashElements[i];
+            var $element = $(element);
+            var hash = element.hash;
+            if (hash) {
+                $element.on('click', function (e) {
+                    // store hash
+                    var hash = this.hash;
+                    if ($(hash).length <= 0) return;
+                    // prevent default anchor click behavior
+                    e.preventDefault();
+                    // animate
+                    $('body, html').stop(true, true).animate({
+                        scrollTop: $(hash).offset().top
+                    }, 100, "linear", function () {
+                        // when done, add hash to url
+                        // (default click behaviour)
+                        window.location.hash = hash;
+                    });
+                });
+            }
+        }
+    }
+
+    smoothHashScroll();
+    var toc = $('.ui-toc');
+    var tocAffix = $('.ui-affix-toc');
+    var tocDropdown = $('.ui-toc-dropdown');
+    //toc
+    tocDropdown.click(function (e) {
+        e.stopPropagation();
+    });
+
+    var enoughForAffixToc = true;
+
+    function generateScrollspy() {
+        $(document.body).scrollspy({
+            target: ''
+        });
+        $(document.body).scrollspy('refresh');
+        if (enoughForAffixToc) {
+            toc.hide();
+            tocAffix.show();
+        } else {
+            tocAffix.hide();
+            toc.show();
+        }
+        $(document.body).scroll();
+    }
+
+    function windowResize() {
+        //toc right
+        var paddingRight = parseFloat(markdown.css('padding-right'));
+        var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+        toc.css('right', right + 'px');
+        //affix toc left
+        var newbool;
+        var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+        //for ipad or wider device
+        if (rightMargin >= 133) {
+            newbool = true;
+            var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+            var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+            tocAffix.css('left', left + 'px');
+        } else {
+            newbool = false;
+        }
+        if (newbool != enoughForAffixToc) {
+            enoughForAffixToc = newbool;
+            generateScrollspy();
+        }
+    }
+
+    $(window).resize(function () {
+        windowResize();
+    });
+    $(document).ready(function () {
+        windowResize();
+        generateScrollspy();
+    });
+
+    //remove hash
+    function removeHash() {
+        window.location.hash = '';
+    }
+
+    var backtotop = $('.back-to-top');
+    var gotobottom = $('.go-to-bottom');
+
+    backtotop.click(function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        if (scrollToTop)
+            scrollToTop();
+        removeHash();
+    });
+    gotobottom.click(function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        if (scrollToBottom)
+            scrollToBottom();
+        removeHash();
+    });
+
+    var toggle = $('.expand-toggle');
+    var tocExpand = false;
+
+    checkExpandToggle();
+    toggle.click(function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        tocExpand = !tocExpand;
+        checkExpandToggle();
+    })
+
+    function checkExpandToggle() {
+        var toc = $('.ui-toc-dropdown .toc');
+        var toggle = $('.expand-toggle');
+        if (!tocExpand) {
+            toc.removeClass('expand');
+            toggle.text('Expand all');
+        } else {
+            toc.addClass('expand');
+            toggle.text('Collapse all');
+        }
+    }
+
+    function scrollToTop() {
+        $('body, html').stop(true, true).animate({
+            scrollTop: 0
+        }, 100, "linear");
+    }
+
+    function scrollToBottom() {
+        $('body, html').stop(true, true).animate({
+            scrollTop: $(document.body)[0].scrollHeight
+        }, 100, "linear");
+    }
+</script>
+</body>
+
+</html>
