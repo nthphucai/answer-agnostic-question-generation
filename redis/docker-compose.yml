@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  redis:
+    image: redis
+    container_name: qag-redis
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - ${REDIS_PORT:-6377}:6379
+    security_opt:
+      - seccomp:unconfined

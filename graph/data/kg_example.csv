@@ -1,0 +1,19 @@
+Source,Target,Relation
+Con người,Vượn cổ,Tổ tiên
+Con người,Người tối cổ,Tiến hóa
+Người tối cổ,Người tinh khôn,Tiến hóa
+Người tinh khôn,Người hiện đại,Tiến hóa
+Người hiện đại,Da vàng,Phân loại
+Người hiện đại,Da đen,Phân loại
+Người hiện đại,Da trắng,Phân loại
+Con người,"Rìu, dao, nạo",Chế tạo công cụ
+Con người,"Lao, cung tên",Chế tạo công cụ
+Con người,Thức ăn động vật,Sự thay đổi ăn uống
+Con người,Nhà cửa,Sự thay đổi sống
+Công cụ đá cũ,Công cụ đá mới,Tiến hóa công cụ
+Loài vượn cổ,Người tối cổ,Tiến hóa
+Người tối cổ,Đồ đá cũ,Chế tác
+Từ đồ đá cũ,Công cụ,Chế tác
+Người tối cổ,Lửa,Phát minh
+Người tối cổ,Cơ thể,Biến đổi
+Người tối cổ,Quan hệ hợp quần,Hình thành
